@@ -83,7 +83,7 @@ export class GenerativeModel {
     if (this.model.startsWith('models/')) {
       this.publisherModelEndpoint = `publishers/google/${this.model}`;
     } else {
-      this.publisherModelEndpoint = `publishers/google/models/${this.model}`;
+      this.publisherModelEndpoint = `${this.model}`;
     }
   }
 
